@@ -1,0 +1,96 @@
+
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>MyLikes - Watch and Manage your liked videos playlist</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Watch and Manage your liked videos playlist!.">
+        <meta name="keywords" content="mylikes,search,youtube liked list,liked list,search on liked list youtube">
+        <link rel="shortcut icon" href="./img/favicon.png">
+
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="./css/styles.css">
+
+
+    </head>
+	<div class="container cf">
+		<div class="col col-1-2 left">
+				<div class="corner-ribbon top-left sticky red shadow">Comming Soon</div>
+
+			<div class="main-area">
+				<div class="main content animated fadeIn delayed">
+					<img alt="Logo of Bobby app" class="logo-bobby" src="./img/logo@3x.png">
+					<h2 class="title">Watch and Manage your liked videos playlist!</h2>
+
+					<div class="asd">
+						<div class="feature-row">
+							<div>
+								<h4>Browse</h4>
+								<p class="small">Explore your liked video list even it contains thousands</p>
+							</div>
+							<div>
+								<h4>Search</h4>
+								<p class="small">You can search using keywords, Channel name and Categories for sure!</p>
+							</div>
+						</div>
+	
+						<div class="feature-row">
+							<div>
+								<h4>Statistics</h4>
+								<p class="small">You will see some basic statistics about your Liked List video categories</p>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="hero-buttons">
+						<a class="app-link">
+							<img class="appstore" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" data-no-retina>
+						</a>
+						<a class="app-link2">
+							<img class="appstore" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Get_it_on_Google_play.svg" data-no-retina>
+						</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="footer">
+        <a class="privacy" href="./privacy_policy.html">Privacy Policy</a>
+        <a class="terms" href="./terms_and_conditions.html">Terms & Conditions</a>
+      </div>
+		</div>
+		<div class="col col-1-2 right">
+			<div class="content animated fadeIn delayed">
+				<div class="bobby-video">
+					<video class="video--app" id="myVideo" preload="true" autoplay="autoplay" loop="loop">
+						<source src="https://firebasestorage.googleapis.com/v0/b/test-signin-e0e5d.appspot.com/o/demo.mp4?alt=media&token=a29ef85e-88cd-40db-b334-2bb6edae0a58" type="video/mp4">
+						<source src="https://firebasestorage.googleapis.com/v0/b/test-signin-e0e5d.appspot.com/o/media.io_Untitled3.webm?alt=media&token=87aecd91-9a16-4c45-8dd7-b79a131aecdd" type="video/webm">
+					</video>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+    </main>
+
+	<script type='text/javascript'>
+	  setTimeout(function(){
+	      document.getElementById("myVideo").play();
+	  }, 1500);
+	
+	  document.getElementById('myVideo').addEventListener('ended',myHandler,false);
+	  function myHandler(e) {
+	      setTimeout(function(){
+	          document.getElementById('myVideo').play();
+	      }, 3000);
+	  }
+	</script>
+
+  </body>
+</html>
